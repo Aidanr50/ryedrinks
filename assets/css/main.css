@@ -1,0 +1,843 @@
+---
+
+---
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+    background: #F8F8F8;
+    font-family: 'Merriweather';
+    overflow-x: hidden;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.hero{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1.2fr 1.2fr 1.5fr;
+    grid-template-rows: 0.75fr 6fr 3fr 0.75fr;
+}
+
+.hero-wrap{
+    padding: 0 4rem;
+    font-family: 'Antic Didone';
+    color: #121641;
+}
+
+.hero-wrap h1{
+    font-size: 3em;
+    margin-bottom: 0.5rem;
+}
+
+.hero-wrap h2{
+    color: #646464;
+    margin-bottom: 1.5rem;
+}
+
+.hero-wrap p{
+    font-family: 'Merriweather';
+    max-width: 500px;
+    font-size: 1em;
+    margin-bottom: 2rem;
+}
+
+.hero-text{
+    grid-area: 2 / 1 / 3 / 3;
+    background: #F8F8F8;
+    display: flex;
+    align-items: center;
+}
+
+.hero-img{
+    grid-area: 2 / 3 / 5 / 4;
+    background-image: url(../img/hero-photo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.logo{
+    padding: 1rem 4rem;
+}
+
+.logo-box{
+    grid-area: 1 / 1 / 2 / 4;
+    background: #F8F8F8;
+}
+
+.logo-white{
+    display: none;
+}
+
+.blog-block{
+    grid-area: 3 / 1 / 4 / 2;
+    background: #1A284A;
+}
+
+.cocktails-block{
+    grid-area: 3 / 2 / 4 / 3;
+    background-color: #A8A08A;
+}
+
+.block-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Antic Didone';
+    font-size: 1.3rem;
+}
+
+.cocktails-block::before, 
+.cocktails-block::after, 
+.blog-block::before, 
+.blog-block::after{
+    content: '';
+    width: 75px;
+    height: 1px;
+    background-color: #F8F8F8;;
+}
+
+.hero{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1.2fr 1.2fr 1.5fr;
+    grid-template-rows: 0.75fr 6fr 3fr 0.75fr;
+}
+
+.hero-foot{
+    grid-area: 4 / 1 / 5 / 3;
+    background-color: #565656;
+}
+
+.chevron-right{
+    margin: 5px 0 0 5px;
+}
+
+.main-nav{
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: #F8F8F8;
+    color: #1A284A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem 0 0;
+    transition: all 0.25s ease-in-out;
+}
+
+.main-nav-scroll{
+    color: #1A284A !important;
+}
+
+.nav-wrap{
+    grid-area: 1 / 1 / 2 / 4;
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1.5fr;
+    grid-template-rows: 1fr;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    transition: all 0.25s ease-in-out;
+}
+
+.nav-wrap-scroll{
+    background-color: #F8F8F8;
+}
+
+.twit-white, .insta-white{
+    display: none;
+    height: 16px;
+}
+
+.twit-navy, .insta-navy{
+    height: 16px;
+}
+
+nav > span{
+    width: 35px;
+    height: 2px;
+    background-color: #1A284A;
+}
+
+.journey{
+    justify-content: center;
+}
+
+/** About Section **/
+
+#about{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1.54fr 1.1fr 0.4fr 0.4fr 1.5fr;
+    grid-template-rows: 1fr 1fr
+}
+
+.about-head{
+    grid-area: 1 / 1 / 3 / 2;
+    background-color:#A8A08A;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #ffffff;
+}
+
+.about-head h1{
+    font-size: 3.75rem;
+    width: 200px;
+    font-style: italic;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    position: relative;
+    font-family: 'Antic Didone';
+}
+
+.about-head h1::before{
+    content: url(../img/filigree_navy.png);
+    position: absolute;
+    left: -50px;
+    top: -5px;
+}
+
+.about-photo{
+    background-position: center;
+    background-size: cover;
+}
+
+.about-photo-1{
+    grid-area: 1 / 2 / 2 / 4;
+    background-image: url(../img/ryan_focus.jpg);
+}
+
+.about-photo-2{
+    grid-area: 1 / 4 / 2 / 6;
+    background-image: url(../img/cocktail_2.jpg);
+}
+
+.about-photo-3{
+    grid-area: 2 / 5 / 2 / 6;
+    background-image: url(../img/cocktail_3.png);
+}
+
+.about-text{
+    grid-area: 2 / 2 / 2 / 5;
+    display: flex;
+    align-items: center;
+    line-height: 2;
+    padding: 3rem;
+    background-color: #1A284A;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+/** Instagram Section **/
+
+#instagram{
+    overflow-x: hidden;
+}
+
+.insta-wrap{
+    display: flex;
+    white-space: nowrap;
+}
+
+.insta-container{
+    display: flex;
+}
+
+#wrap-r{
+    animation: ticker-r 20s infinite linear;
+}
+
+#wrap-l{
+    animation: ticker-l 20s infinite linear;
+   
+}
+
+.insta-wrap h1{
+    display: inline;
+    font-size: 4.58em;
+    margin: 0 2rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+/** Scrolling Test
+.feed-wrapper{
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    padding: 20px 0;
+    grid-gap: 20px 0;
+    align-content: start;
+}
+
+.feed-wrapper > *{
+    grid-column: 2 / -2;
+}
+
+.feed-wrapper > .full{
+    grid-column: 1 / -1;
+}
+
+.feed-container > .feed-item {
+  scroll-snap-align: center;
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.feed-container{
+    display: grid;
+    grid-gap: calc(var(--gutter) / 2);
+    grid-template-columns: 10px repeat(6, calc(50% - 20px * 2)) 10px;
+    grid-template-rows: minmax(150px, 1fr);
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-bottom: calc(.75 * 20px);
+    margin-bottom: calc(-0.5 * 20px);
+  } **/
+
+.feed-wrapper{
+
+}
+
+.feed-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 1em
+}
+
+.gallery-item {
+    position: relative;
+    flex: 1 0 22rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item-type {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item-likes {
+    margin-right: 2.2rem;
+}
+
+.gallery-item-info {
+    display: none;
+}
+
+.gallery-item-info li {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.gallery-item:hover .gallery-item-info,
+.gallery-item:focus .gallery-item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/** Bio Section **/
+
+#bio{
+    margin: 10rem 0;
+}
+
+.bio-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    grid-template-rows: 1fr;
+}
+
+.bio-text-wrap{
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    align-items: center;
+}
+
+.bio-text{
+    padding: 0 4rem;
+}
+
+.bio-text h1{
+    margin-bottom: 2rem;
+    font-family: 'Antic Didone';
+}
+
+.bio-text p{
+    margin-bottom: 2rem;
+    max-width: 400px;
+    font-weight: 100;
+}
+
+.brown-btn{
+    width: 150px;
+    background-color: #A8A08A;
+    padding: 1rem;
+    color: #ffffff;
+    font-family: 'Merriweather';
+    font-weight: 400;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.bio-img{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.bio-photo{
+    width: 100%;
+}
+
+/** Footer **/
+
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: #565656;
+    color: #ffffff;
+    font-weight: 100;
+    font-family: 'Antic Didone';
+}
+
+.footer-wrap{
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.footer-icon{
+    width: 16px;
+    height: 16px;
+}
+
+.footer-icon-wrap{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.footer-icon-wrap > span{
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.copyright{
+    text-align: center;
+}
+
+
+/******* COCKTAIL PAGE ********/
+
+.cocktail-hero{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.75fr 6fr 3fr 0.75fr;
+}
+
+.cocktail-hero-text{
+    height: 100vh;
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.cocktail-hero-img{
+    grid-area: 2 / 2 / 5 / 3;
+    background-image: url(../img/cocktail-hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cocktail-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    color: #1A284A;
+    text-decoration: none;
+}
+
+.cocktail-img-wrap{
+    font-size: 0;
+}
+
+.cocktail-img-wrap-l{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.cocktail-img-wrap-r{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.cocktail-text-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cocktail-text-wrap-l{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.cocktail-text-wrap-r{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.cocktail-img-1{
+    width: 100%;
+}
+
+.cocktail-text-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px #A8A08A solid;
+    width: 80%;
+    padding: 5rem 0;
+}
+
+.cocktail-head-wrap{
+    text-align: center;
+}
+
+
+
+
+
+
+/** TICKER ANIMATION **/
+
+@keyframes ticker-r{
+    100% { 
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes ticker-l{
+    100% { 
+        transform: translateX(100%);
+    }
+}
+  
+
+@media screen and (max-width: 970px){
+
+    .hero{
+        height: 100vh;
+        grid-template-columns: 1.2fr 1.2fr 2fr;
+        grid-template-rows: 0.75fr 6fr 3fr 0.75fr;
+    }
+
+    .nav-wrap{
+        grid-template-columns: 1.2fr 1.2fr 2fr;
+    }
+
+    /** About Section **/
+
+    #about{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 2fr 1.1fr 0.4fr 0.4fr 1.5fr;
+        grid-template-rows: 1fr 1fr
+    }
+
+    .about-head h1{
+        font-size: 3rem;
+        width: 200px;
+        font-style: italic;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        position: relative;
+    }
+
+    .about-head h1::before{
+        content: none;
+    }
+
+    .about-photo-1{
+        display: none;
+    }
+
+    .about-photo-2{
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .cocktail-hero{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 870px){
+    
+    .about-photo-3{
+        display: none;
+    }
+
+    .about-text{
+        grid-area: 2 / 2 / 2 / 6;
+        display: flex;
+        align-items: center;
+        line-height: 2;
+        padding: 3rem;
+        background-color: #1A284A;
+        color: #ffffff;
+        font-weight: 100;
+    }
+
+    /** Bio Section **/
+
+    #bio{
+        margin: 5rem 0;
+    }
+    
+    .bio-wrapper{
+        display: block
+    }
+    
+    .bio-text-wrap{
+        grid-area: 1 / 1 / 2 / 2;
+        display: flex;
+        align-items: center;
+    }
+    
+    .bio-text{
+        padding: 0 2.5rem 5rem;
+        text-align: center;
+    }
+    
+    .bio-text h1{
+        margin-bottom: 2rem;
+        font-family: 'Antic Didone';
+    }
+    
+    .bio-text p{
+        margin-bottom: 2rem;
+        max-width: 100%;
+        font-weight: 100;
+        color: #121641;
+    }
+    
+    .bio-text button{
+        width: 70%;
+        background-color: #A8A08A;
+        padding: 1rem;
+        color: #ffffff;
+        font-family: 'Merriweather';
+    }
+    
+    .bio-img{
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    
+    .bio-photo{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 680px){
+
+    .hero{
+        display: block;
+        height: 100vh;
+        background-image: url(../img/hero-photo-dark.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .hero-text{
+        background: none;
+        color: #FFFFFF;
+        height: 100vh;
+        padding: 3rem 0;
+    }
+
+    .hero-wrap{
+        padding: 0 2.5rem;
+    }
+
+    .hero-wrap h1, h2, h3, p{
+        margin-bottom: 0.5rem;
+        color: #FFFFFF;
+    }
+
+    .subtitle{
+        color: #E9E9E9 !important;
+    }
+
+    .logo-white{
+        display: block;
+    }
+
+    .insta-white, .twit-white{
+        display: block;
+    }
+
+    .logo{
+        padding: 1rem 2.5rem;
+    }
+
+
+    .logo-navy, .twit-navy, .insta-navy{
+        display: none;
+    }
+
+    .main-nav{
+        grid-area: 1 / 3 / 2 / 4;
+        background: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2.5rem 0 0;
+        color: #FFFFFF;
+    }
+
+    nav > span{
+        width: 15px;
+        height: 2px;
+        background-color: #ffffff;
+    }
+
+    .logo-box{
+        background: none;
+    }
+
+    .block-link{
+        color: #FFFFFF;
+        text-decoration: none;
+        font-family: 'Antic Didone';
+        font-size: 1.3rem;
+        height: 16.7vh;
+        display: none; /** Remove to show Blog & Cocktail blocks **/
+    }
+
+    .nav-wrap{
+        grid-template-columns: 0.6fr 1.2fr 5fr;
+    }
+
+    /** About Section **/
+
+    #about{
+        height: auto;
+        display: block;
+    }
+
+    .about-head{
+        padding: 2rem;
+    }
+
+    .about-head h1{
+        width: auto;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .about-text{
+        text-align: center;
+    }
+
+    .about-photo{
+        display: block;
+        height: 400px;
+    }
+
+    .feed-container{
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+    
+    .gallery-item {
+        margin: 0.25rem;
+    }
+
+
+    /***** COCKTAIL PAGE *****/
+
+    .cocktail-hero{
+        display: block;
+        height: 100vh;
+        background-image: url(../img/cocktail_hero_dark.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .cocktail-wrap{
+        display: block;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .cocktail-wrap-1{
+        background-image: url(../img/cocktails/banks-three-dark.jpg);
+    }
+
+    .cocktail-wrap-2{
+        background-image: url(../img/cocktails/home-alone-dark.jpg);
+    }
+
+    .cocktail-wrap{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        color: #1A284A;
+        text-decoration: none;
+        height: 400px;
+    }
+
+    .cocktail-img-wrap{
+        display: none;
+    }
+
+    .cocktail-text-box{
+        
+    }
+
+    .cocktail-text-wrap{
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+}
+
