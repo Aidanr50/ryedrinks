@@ -2,14 +2,67 @@
 
 ---
 
-{{ content }}
-<ul class="myposts">
-    {% for post in site.posts %}
-    <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <span class="post-description">
-            {{ post.description }}
-        </span>
-    </li>
-    {% endfor %}
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryedrinks</title>
+    <link rel="stylesheet" href="assets/css/main.css" | relative_url>
+    <link href="https://fonts.googleapis.com/css?family=Antic+Didone|Merriweather:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="fake-nav"></div>
+        <div id="navbar" class="nav-wrap">
+            <div class="logo-box">
+                <a href="index.html"><img src="assets/img/R.png" alt="Ryedrinks Logo" class="logo logo-navy"><img src="assets/img/R-white.png" alt="Ryedrinks Logo" class="logo logo-white"></a>
+            </div>
+
+            <nav id="main-nav" class="main-nav">
+                <a class="link" href="cocktails.html">Cocktails</a>
+                <a class="link" href="blog.html">Blog</a>
+                <span id="nav-line"></span>
+                <a class="insta-navy"><img src="assets/img/instagram.png"></a>
+                <a class="insta-white"><img src="assets/img/instagram-white.png"></a>
+                <a class="twit-navy"><img src="assets/img/twitter.png"></a>
+                <a class="twit-white"><img src="assets/img/twitter-white.png"></a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="blog-wrap">
+        <div class="categories-wrap">
+            <button>All</button>
+            <button>Inspiration</button>
+            <button>Stories</button>
+            <button>Recipes</button>
+        </div>
+        <div class="blog-container">
+            <ul class="blog-posts">
+            {% for post in site.posts %}
+            <hr class="blog-line">
+                <li>
+                    <div class="blog-info">
+                        <p>Category: <span>{{ post.catagory }}</span></p>
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                        <p class="post-description">
+                            {{ post.excerpt | truncate: 156 }}
+                        </p>
+                        <p>{{ post.date | date: " %B %-d %Y" }}</p>
+                    </div>
+                
+                    <div class="blog-img">
+                        <img src="{{ post.image }}">
+                    </div>    
+                </li>
+                
+            {% endfor %}
+            </ul>
+        </div>
+
+    </section>
+
+</body>
+</html>
+
