@@ -1,7 +1,7 @@
 ---
-title: Banks Three
+title: Home Alone
 layout: cocktail_layout
-tagline: Fruity, Fresh & Flexible
+tagline: A Warm Christmas Tipple
 ---
 
 <p class="test-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam maecenas ultricies mi eget mauris pharetra et ultrices neque. Risus commodo viverra maecenas accumsan lacus. </p>

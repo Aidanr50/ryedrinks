@@ -6,6 +6,7 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -16,6 +17,7 @@ body{
 
 .link{
     text-decoration: none;
+    color: #121641;
 }
 
 .hero{
@@ -49,7 +51,7 @@ body{
 }
 
 .hero-text{
-    grid-area: 2 / 1 / 3 / 3;
+    grid-area: 2 / 1 / 3 / 2;
     background: #F8F8F8;
     display: flex;
     align-items: center;
@@ -62,7 +64,7 @@ body{
     background-size: cover;
 }
 
-.logo{
+.logo{   
     padding: 1rem 4rem;
 }
 
@@ -479,7 +481,6 @@ footer{
 
 .cocktail-hero-text{
     height: 100vh;
-    grid-area: 2 / 1 / 3 / 2;
 }
 
 .cocktail-hero-img{
@@ -541,6 +542,46 @@ footer{
 }
 
 
+/** COCKTAIL TEMPLATE **/
+
+.banks-hero-img{
+    grid-area: 2 / 2 / 5 / 3;
+    font-size: 0;
+    background-image: url(../img/cocktails/banks-three.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.cocktail-temp-subtitle{
+    font-style: italic;
+}
+
+.cocktails-return{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1A284A;
+    height: 60px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cocktails-return > p{
+    margin: 18px auto;
+}
+
+.cocktail-temp-text{
+    flex-direction: column;
+    position: relative;
+    grid-area: 2 / 1 / 5 / 2;
+    align-items: flex-start;
+}
+
+.cocktail-temp-wrap{
+    padding: 2rem 0 0 4rem;
+}
 
 
 
@@ -711,6 +752,10 @@ footer{
 
     .insta-white, .twit-white{
         display: block;
+    }
+
+    .link{
+        color: #f8f8f8;
     }
 
     .logo{
