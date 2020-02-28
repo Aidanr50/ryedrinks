@@ -586,7 +586,7 @@ footer{
         width: 200px;
         font-style: italic;
         font-weight: 500;
-        text-transform: uppercase;
+        text-transform: none;
         letter-spacing: 0.5rem;
         position: relative;
     }
