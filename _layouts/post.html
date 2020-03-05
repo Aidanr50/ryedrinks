@@ -1,7 +1,6 @@
 ---
 
 ---
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,35 +31,26 @@
     </header>
 
     <section id="blog-wrap">
-        <div class="categories-wrap" id="categories-wrap">
-            <button class="category-select active" onclick="filterSelection('all')">All</button>
-            <button class="category-select" onclick="filterSelection('Inspiration')">Inspiration</button>
-            <button class="category-select" onclick="filterSelection('Stories')">Stories</button>
-            <button class="category-select" onclick="filterSelection('Recipes')">Recipes</button>
-        </div>
         <div class="blog-container">
-            <ul class="blog-posts">
-            {% for post in site.posts %}
-            <hr class="filter-item {{ post.catagory }} ">
-                <li class="filter-item {{ post.catagory }} ">
-                    <div class="blog-info">
-                        <p class="category-tag">Category: <span class="category-type">{{ post.catagory }}</span></p>
-                        <a href="{{ post.url }}">{{ post.title }}</a>
-                        <p>
-                            {{ post.excerpt | truncate: 156 }}
-                        </p>
-                        <p class="blog-date">{{ post.date | date: " %B %-d %Y" }}</p>
-                    </div>
-                
-                    <div class="blog-img">
-                        <img src="{{ post.image }}">
-                    </div>    
-                </li>
-                
-            {% endfor %}
-            </ul>
-        </div>
+            <div class="blog-info">
+                <p class="category-tag">Category: <span class="category-type">{{ page.catagory }}</span></p>
+                <h1 class="">{{ page.title }}</h1>
+                <p class="blog-date">{{ page.date | date: " %B %-d %Y" }}</p>
+            </div>
+        
+            <div class="post-img-container">
+                <img class="post-img" src="{{ page.imagePost }}">
+            </div> 
 
+            <hr class="post-line">
+
+            <h2>"{{ page.tagline }}"</h2>
+
+            <div class="post-content">
+                {{ content }}
+            </div>
+        
+        </div>
     </section>
 
     <footer>
@@ -76,9 +66,8 @@
             <p>&copy;Copyright Aidan Ross 2020</p>
         </div>
     </footer>
-
-    <script src="assets/js/filter.js"></script>
-
+    
+    <script src="assets/js/script.js"></script>
+    
 </body>
 </html>
-

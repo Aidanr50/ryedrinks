@@ -1,14 +1,16 @@
 ---
 layout: post
-title: 2019&#58; A Recap in The Year of Rum
-tagline: "The Biggest Spirit of 2019"
-catagory: Inspiration
-image: assets/img/posts/rum-bottle.jpg
-imagePost: assets/img/posts/rum-bottle-post.jpg
-permalink: A Recap In The Year of Rum
+title: My Time at The Banks Invitational
+tagline: Good booze, good friends & good competition
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate, augue a vestibulum auctor, tellus mauris vehicula elit, id rutrum orci turpis non arcu...
+catagory: Stories
+image: assets/img/posts/ryan-pouring.jpg
+imagePost: assets/img/posts/ryan-banks-inviational.jpg
+permalink: My Time at The Banks Invitational
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit sem odio, sed lacinia elit condimentum ut. Proin ullamcorper, nisl quis condimentum sollicitudin, eros eros molestie eros, nec consectetur leo mi a ante. Cras a rhoncus nibh. Etiam sagittis consectetur diam sed tempus. Vivamus sodales malesuada neque sed commodo. In viverra justo quis nulla rutrum vulputate. Suspendisse a tortor sem. Cras et felis enim.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit sem odio, sed lacinia elit condimentum ut. Proin ullamcorper, nisl quis condimentum sollicitudin, eros eros molestie eros, nec consectetur leo mi a ante. Cras a rhoncus nibh. Etiam sagittis consectetur diam sed tempus. Vivamus sodales malesuada neque sed commodo. In viverra justo quis nulla rutrum vulputate. Suspendisse a tortor sem. Cras et felis enim. 
 
 Morbi a nibh nec arcu imperdiet luctus et eu est. Proin eu tincidunt lectus. Aenean commodo nunc sit amet nibh feugiat, nec mattis sapien pellentesque. Curabitur dapibus sem vitae mattis pretium. Aenean eget libero lacinia, sodales lorem vitae, placerat est. Sed eget lacus porta, fringilla libero ut, facilisis odio. Sed at elit nunc. Morbi sollicitudin sed erat in porta. Sed ullamcorper, arcu nec viverra bibendum, purus nisl sodales elit, a posuere elit metus quis quam. Donec finibus sed leo egestas aliquam.
 

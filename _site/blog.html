@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryedrinks</title>
-    <link rel="stylesheet" href="assets/css/main.css" | relative_url>
+    <link rel="stylesheet" href="assets/css/blog.css" | relative_url>
     <link href="https://fonts.googleapis.com/css?family=Antic+Didone|Merriweather:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -28,24 +28,24 @@
     </header>
 
     <section id="blog-wrap">
-        <div class="categories-wrap">
-            <button>All</button>
-            <button>Inspiration</button>
-            <button>Stories</button>
-            <button>Recipes</button>
+        <div class="categories-wrap" id="categories-wrap">
+            <button class="category-select active" onclick="filterSelection('all')">All</button>
+            <button class="category-select" onclick="filterSelection('Inspiration')">Inspiration</button>
+            <button class="category-select" onclick="filterSelection('Stories')">Stories</button>
+            <button class="category-select" onclick="filterSelection('Recipes')">Recipes</button>
         </div>
         <div class="blog-container">
             <ul class="blog-posts">
             
-            <hr class="blog-line">
-                <li>
+            <hr class="filter-item Inspiration ">
+                <li class="filter-item Inspiration ">
                     <div class="blog-info">
-                        <p>Category: <span>Inspiration</span></p>
-                        <a href="/2020/02/28/A-Recap-In-The-Year-of_Rum.html">A Recap in The Year of Rum</a>
-                        <p class="post-description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate, augue a vestibulum auctor, tellus mauris vehicula elit, id rutrum orci turpi...
+                        <p class="category-tag">Category: <span class="category-type">Inspiration</span></p>
+                        <a href="/A Recap In The Year of Rum">2019&#58; A Recap in The Year of Rum</a>
+                        <p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit sem odio, sed lacinia elit condimentum ut. Proin ullamcorper, nisl quis con...
                         </p>
-                        <p> February 28 2020</p>
+                        <p class="blog-date"> February 28 2020</p>
                     </div>
                 
                     <div class="blog-img">
@@ -54,15 +54,15 @@
                 </li>
                 
             
-            <hr class="blog-line">
-                <li>
+            <hr class="filter-item Stories ">
+                <li class="filter-item Stories ">
                     <div class="blog-info">
-                        <p>Category: <span>Stories</span></p>
-                        <a href="/2020/02/27/A-Recap-In-The-Year-of_Rum.html">My Time at The Banks Invitational</a>
-                        <p class="post-description">
+                        <p class="category-tag">Category: <span class="category-type">Stories</span></p>
+                        <a href="/My Time at The Banks Invitational">My Time at The Banks Invitational</a>
+                        <p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit sem odio, sed lacinia elit condimentum ut. Proin ullamcorper, nisl quis con...
                         </p>
-                        <p> February 27 2020</p>
+                        <p class="blog-date"> February 27 2020</p>
                     </div>
                 
                     <div class="blog-img">
@@ -71,15 +71,15 @@
                 </li>
                 
             
-            <hr class="blog-line">
-                <li>
+            <hr class="filter-item Recipes ">
+                <li class="filter-item Recipes ">
                     <div class="blog-info">
-                        <p>Category: <span>Recipes</span></p>
-                        <a href="/2020/02/26/A-Recap-In-The-Year-of_Rum.html">Home Alone 2 A Real Winter Warmer</a>
-                        <p class="post-description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate, augue a vestibulum auctor, tellus mauris vehicula elit, id rutrum orci turpi...
+                        <p class="category-tag">Category: <span class="category-type">Recipes</span></p>
+                        <a href="/Home Alone 2 A Real Winter Warmer">Home Alone 2&#58; A Real Winter Warmer</a>
+                        <p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit sem odio, sed lacinia elit condimentum ut. Proin ullamcorper, nisl quis con...
                         </p>
-                        <p> February 26 2020</p>
+                        <p class="blog-date"> February 26 2020</p>
                     </div>
                 
                     <div class="blog-img">
@@ -88,15 +88,15 @@
                 </li>
                 
             
-            <hr class="blog-line">
-                <li>
+            <hr class="filter-item Inspiration ">
+                <li class="filter-item Inspiration ">
                     <div class="blog-info">
-                        <p>Category: <span>Inspiration</span></p>
+                        <p class="category-tag">Category: <span class="category-type">Inspiration</span></p>
                         <a href="/2020/02/25/A-Recap-In-The-Year-of_Rum.html">A Recap in The Year of Rum</a>
-                        <p class="post-description">
+                        <p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate, augue a vestibulum auctor, tellus mauris vehicula elit, id rutrum orci turpi...
                         </p>
-                        <p> February 25 2020</p>
+                        <p class="blog-date"> February 25 2020</p>
                     </div>
                 
                     <div class="blog-img">
@@ -109,6 +109,22 @@
         </div>
 
     </section>
+
+    <footer>
+        <div class="footer-wrap">
+            <h2>RYEDRINKS</h2>
+            <div class="footer-icon-wrap">   
+                <a class="insta-footer footer-icon"><img src="assets/img/instagram-white.png"></a>
+                <span class="footer-line"></span>
+                <a class="twit-footer"><img src="assets/img/twitter-white.png"></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy;Copyright Aidan Ross 2020</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/filter.js"></script>
 
 </body>
 </html>
