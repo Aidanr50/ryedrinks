@@ -4,6 +4,7 @@ layout: cocktail_layout
 tagline: Fruity, Fresh & Flexible
 thumbnail:
 imagePost: /assets/img/cocktails/banks-three-cocktail.jpg
+permalink: Banks Three
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam maecenas ultricies mi eget mauris pharetra et ultrices neque. Risus commodo viverra maecenas accumsan lacus.

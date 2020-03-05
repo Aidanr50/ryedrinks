@@ -3,6 +3,7 @@ title: Home Alone
 layout: cocktail_layout
 tagline: A Warm Christmas Tipple
 imagePost: /assets/img/cocktails/home-alone-cocktail.jpg
+permalink: Home Alone 2
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam maecenas ultricies mi eget mauris pharetra et ultrices neque. Risus commodo viverra maecenas accumsan lacus.

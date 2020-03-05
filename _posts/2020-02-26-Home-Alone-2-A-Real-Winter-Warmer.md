@@ -10,7 +10,7 @@ permalink: Home Alone 2 A Real Winter Warmer
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit sem odio, sed lacinia elit condimentum ut. Proin ullamcorper, nisl quis condimentum sollicitudin, eros eros molestie eros, nec consectetur leo mi a ante. Cras a rhoncus nibh. Etiam sagittis consectetur diam sed tempus. Vivamus sodales malesuada neque sed commodo. In viverra justo quis nulla rutrum vulputate. Suspendisse a tortor sem. Cras et felis enim.
 
-![My helpful screenshot](/assets/img/cocktail_2.jpg)
+![My helpful screenshot](assets/img/cocktail_2.jpg)
 
 Morbi a nibh nec arcu imperdiet luctus et eu est. Proin eu tincidunt lectus. Aenean commodo nunc sit amet nibh feugiat, nec mattis sapien pellentesque. Curabitur dapibus sem vitae mattis pretium. Aenean eget libero lacinia, sodales lorem vitae, placerat est. Sed eget lacus porta, fringilla libero ut, facilisis odio. Sed at elit nunc. Morbi sollicitudin sed erat in porta. Sed ullamcorper, arcu nec viverra bibendum, purus nisl sodales elit, a posuere elit metus quis quam. Donec finibus sed leo egestas aliquam.
 
