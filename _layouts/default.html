@@ -9,27 +9,14 @@
 </head>
 <body>
     <header class="hero">
-        <div id="navbar" class="nav-wrap">
-            <div class="logo-box">
-                <a href="index.html"><img src="assets/img/R.png" alt="Ryedrinks Logo" class="logo logo-navy"><img src="assets/img/R-white.png" alt="Ryedrinks Logo" class="logo logo-white"></a>
-            </div>
-
-            <nav id="main-nav" class="main-nav">
-                <a class="link" href="cocktails.html">Cocktails</a>
-                <a class="link" href="blog.html">Blog</a>
-                <span id="nav-line"></span>
-                <a class="insta-navy" href="https://www.instagram.com/ryedrinks/"><img src="assets/img/instagram.png"></a>
-                <a class="insta-white" href="https://www.instagram.com/ryedrinks/"><img src="assets/img/instagram-white.png"></a>
-                <a class="twit-navy" href="https://twitter.com/Ryan_Mackie"><img src="assets/img/twitter.png"></a>
-                <a class="twit-white" href="https://twitter.com/Ryan_Mackie"><img src="assets/img/twitter-white.png"></a>
-            </nav>
-        </div>
+       
+        {% include nav.html %}
 
         <main class="hero-text"> 
             <div class="hero-wrap">
                 <h1>Ryan Mackie</h1>
                 <h2 class="subtitle">Senior Bartender</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu egestas sapien. In eu pharetra lacus.</p>
+                <p>An Aberdeen fellow with national aspirations in the bar & restaurant trade.</p>
             </div>
         </main> 
 
@@ -37,7 +24,7 @@
 
         <a class="cocktails-block block-link" href="cocktails.html">Cocktails</a>
 
-        <div class="hero-foot block-link journey">
+        <div class="hero-foot block-link journey" onclick="aboutScroll()">
 
             <p>My Journey</p>
             <img class="chevron-right" src="assets/img/left-chevron.png">
@@ -57,7 +44,9 @@
         </div>
 
         <div class="about-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu egestas sapien. In eu pharetra lacus. Aenean sit amet augue at enim iaculis laoreet. Aenean iaculis risus non nulla posuere, vitae congue dui condimentum.
+            <p>
+                I live and breathe the drinks industry. With 5 years experience giving people the nights of their lives.
+                Crafting tailored experiences in the form of cocktails and a kind face.
             </p>
         </div>
 
@@ -91,8 +80,8 @@
                 <div class="gallery-item" tabindex="0">
                     <img src="/assets/img/instagram/sea-bass.jpg" class="gallery-image" alt="">
                     <div class="gallery-item-info">
+                        <p class="gallery-item-caption">Stone Bass so tasty I had it twice last week!</p>
                         <ul>
-                            <li class="gallery-item-likes">Stone Bass so tasty I had it twice last week!</li>
                             <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
                             <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
                         </ul>
@@ -176,10 +165,13 @@
         <div class="bio-wrapper">
             <div class="bio-text-wrap">
                 <div class="bio-text">
-                    <h1>Behind it all..</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu egestas sapien. In eu pharetra lacus. Aenean sit amet augue at enim iaculis laoreet. 
+                    <h1>Behind The Bar...</h1>
+                    <p>
+                        I'm still a person. Living his life with friends and family that want me to do more and see more.
+                        To them I'm incredibly thankful. Because if it wasn't for those people. I wouldn't be where I am now.
                     </p>
-                    <p>Aenean iaculis risus non nulla posuere, vitae congue dui condimentum. Cras fringilla scelerisque libero, ut mattis metus eleifend nec.
+                    <p>
+                        Now I'm at a stage in my life where 
                     </p>
                     <button class="brown-btn" href="blog.html">Visit Blog</button>
                 </div>
@@ -190,23 +182,10 @@
         </div>
     </section>
 
-    <footer>
-        <div class="footer-wrap">
-            <h2>RYEDRINKS</h2>
-            <div class="footer-icon-wrap">   
-                <a class="insta-footer footer-icon"><img src="assets/img/instagram-white.png"></a>
-                <span class="footer-line"></span>
-                <a class="twit-footer"><img src="assets/img/twitter-white.png"></a>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy;Copyright Aidan Ross 2020</p>
-        </div>
-    </footer>
-    
-    {{ content }}
+    {% include footer.html %}
     
     <script src="https://kit.fontawesome.com/f359594d0c.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/ticker.js"></script>
 </body>
 </html>

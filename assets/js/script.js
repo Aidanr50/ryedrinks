@@ -1,8 +1,3 @@
-var ticker = document.querySelector('.insta-wrap')
-  , list = document.querySelector('.insta-container')
-  , clone = list.cloneNode(true)
-
-ticker.append(clone)
 
 /* Mobile Nav Scroll Colour Change */
 window.addEventListener('load', onLoadFunction);
@@ -85,30 +80,12 @@ function onResizeFunction(e){
   }
 };
 
-window.addEventListener('resize', onTestFunction);
-function onTestFunction(e){
-  if(window.innerWidth > 680 && scrollPosY > 0){
-
-        var all = document.getElementsByClassName('link');
-        for (var i = 0; i < all.length; i++) {
-        all[i].style.color = '#1A284A';
-        }
-        document.getElementById("navbar").className = "nav-wrap nav-wrap-scroll";
-        document.getElementsByClassName("main-nav").className = "main-nav main-nav-scroll";
-        document.getElementsByClassName("logo-white")[0].style.display = "none";
-        document.getElementsByClassName("logo-navy")[0].style.display = "block";
-        document.getElementsByClassName("insta-white")[0].style.display = "none";
-        document.getElementsByClassName("twit-white")[0].style.display = "none";
-        document.getElementsByClassName("insta-navy")[0].style.display = "block";
-        document.getElementsByClassName("twit-navy")[0].style.display = "block";
-        document.getElementById("nav-line").style.backgroundColor = "#1A284A";
-      
-      }
-      
-    };
-
-
 function cocktailScroll() {
   var elmnt = document.getElementById("cocktails");
+  elmnt.scrollIntoView();
+}
+
+function aboutScroll() {
+  var elmnt = document.getElementById("about");
   elmnt.scrollIntoView();
 }

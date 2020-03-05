@@ -19,14 +19,19 @@ body{
     overflow-x: hidden;
 }
 
-.link{
+p{
+    margin: 0 0 2rem 0;
+    line-height: 1.8;
+}
+
+.link, .link-white{
     text-decoration: none;
     color: #121641;
 }
 
 .hero{
     display: block;
-    height: 100vh;
+    height: calc(100vh - 62px);
     grid-template-columns: 1.2fr 1.2fr 1.5fr;
     grid-template-rows: 0.75fr 6fr 3fr 0.75fr;
 }
@@ -72,7 +77,7 @@ body{
     padding: 1rem 4rem;
 }
 
-.logo-box{
+.logo-box, .logo-box-white{
     grid-area: 1 / 1 / 2 / 4;
     background: #F8F8F8;
 }
@@ -89,6 +94,15 @@ body{
 .cocktails-block{
     grid-area: 3 / 2 / 4 / 3;
     background-color: #A8A08A;
+}
+
+.cocktails-block:hover{
+    background-color: #979387;
+    transition: all 0.2s ease-in-out;
+}
+
+.cocktails-block:hover  .cocktails-block::before{
+    width: 10px;
 }
 
 .block-link{
@@ -172,6 +186,10 @@ body{
     height: 16px;
 }
 
+#nav-line-white{
+    background-color: #1A284A;
+}
+
 nav > span{
     width: 35px;
     height: 2px;
@@ -180,6 +198,11 @@ nav > span{
 
 .journey{
     justify-content: center;
+    cursor: pointer;
+}
+
+.journey p{
+    margin: 0;
 }
 
 /** About Section **/
@@ -242,11 +265,14 @@ nav > span{
     grid-area: 2 / 2 / 2 / 5;
     display: flex;
     align-items: center;
-    line-height: 2;
     padding: 3rem;
     background-color: #1A284A;
     color: #ffffff;
     font-weight: 100;
+}
+
+.about-text p{
+    margin: 0;
 }
 
 /** Instagram Section **/
@@ -335,12 +361,14 @@ nav > span{
     color: #fff;
     cursor: pointer;
     font-size: 0;
+    transition: all 1s ease-in-out;
 }
 
 .gallery-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.0);
 }
 
 .gallery-item-type {
@@ -382,7 +410,6 @@ nav > span{
     height: 1px;
     width: 1px;
     overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
 }
 
 /** Bio Section **/
@@ -433,7 +460,7 @@ nav > span{
 }
 
 .brown-btn:hover{
-    background-color: #E0D7BE;
+    background-color: #979387;
     transition: all 0.2s ease-in-out;
 }
 
@@ -449,7 +476,7 @@ nav > span{
 
 footer{
     width: 100%;
-    height: 290px;
+    height: 250px;
     background-color: #565656;
     color: #ffffff;
     font-weight: 100;
@@ -565,6 +592,73 @@ footer{
 
 /** COCKTAIL TEMPLATE **/
 
+.cocktail-template-hero{
+    display: grid;
+    height: calc(100vh - 62px);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.75fr 6fr 3fr 0.75fr;
+}
+
+.cocktail-template{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90% 10%;
+    padding: 0;
+    height: calc(100vh - 62px);
+}
+
+.cocktail-text{
+    padding: 0 4rem;
+    font-family: 'Antic Didone';
+    color: #121641;
+    overflow: auto;
+    border: none;
+}
+
+.cocktail-text h1{
+    font-size: 3em;
+    margin-bottom: 0.5rem;
+}
+
+.cocktail-text h2{
+    color: #646464;
+    margin-bottom: 1.5rem;
+}
+
+.cocktail-text p{
+    font-family: 'Merriweather';
+    max-width: 500px;
+    font-size: 1em;
+    margin-bottom: 2rem;
+}
+
+.cocktail-template-img{
+    grid-area: 1 / 2 / 5 / 3;
+    background-image: url(/assets/img/cocktails/Home-Alone-Cocktail.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.test-img{
+    height: calc(100vh - 62px);
+    overflow: hidden;
+}
+
+.cocktail-text h1{
+
+}
+.cocktails-return{
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: #1A284A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #f8f8f8;
+    font-size: 1.2em;
+}
+/**
 .banks-hero-img{
     grid-area: 2 / 2 / 5 / 3;
     font-size: 0;
@@ -602,7 +696,7 @@ footer{
 
 .cocktail-temp-wrap{
     padding: 2rem 0 0 4rem;
-}
+} **/
 
 /** TICKER ANIMATION **/
 
@@ -640,7 +734,7 @@ footer{
     .blog-block::before, 
     .blog-block::after{
     width: 30px;
-}
+    }
 
     .nav-wrap{
         grid-template-columns: 1.2fr 1.2fr 2fr;
@@ -747,6 +841,33 @@ footer{
     .bio-photo{
         width: 100%;
     }
+
+    .cocktail-template-hero{
+        display: block;
+        height: auto;
+    }
+
+    .cocktail-template{
+        height: auto;
+        display: block;
+    }
+
+    .cocktail-text{
+        overflow: visible;
+    }
+    
+    .cocktail-text p{
+        max-width: 100%;
+    }
+
+    .cocktails-return{
+        height: 60px;
+    }
+
+    .test-img{
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 680px){
@@ -794,7 +915,6 @@ footer{
     .logo{
         padding: 1rem 2.5rem;
     }
-
 
     .logo-navy, .twit-navy, .insta-navy{
         display: none;
@@ -906,12 +1026,16 @@ footer{
         display: none;
     }
 
-    .cocktail-text-box{
-        
-    }
-
     .cocktail-text-wrap{
         grid-area: 1 / 1 / 2 / 3;
+    }
+
+    .cocktail-text{
+        padding: 0 2.5rem;
+    }
+
+    .cocktail-text p{
+        color: #1A284A; ;
     }
 
 }

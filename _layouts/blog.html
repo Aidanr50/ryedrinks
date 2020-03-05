@@ -14,21 +14,7 @@
 <body>
     <header>
         <div class="fake-nav"></div>
-        <div id="navbar" class="nav-wrap">
-            <div class="logo-box">
-                <a href="index.html"><img src="assets/img/R.png" alt="Ryedrinks Logo" class="logo logo-navy"><img src="assets/img/R-white.png" alt="Ryedrinks Logo" class="logo logo-white"></a>
-            </div>
-
-            <nav id="main-nav" class="main-nav">
-                <a class="link" href="cocktails.html">Cocktails</a>
-                <a class="link" href="blog.html">Blog</a>
-                <span id="nav-line"></span>
-                <a class="insta-navy"><img src="assets/img/instagram.png"></a>
-                <a class="insta-white"><img src="assets/img/instagram-white.png"></a>
-                <a class="twit-navy"><img src="assets/img/twitter.png"></a>
-                <a class="twit-white"><img src="assets/img/twitter-white.png"></a>
-            </nav>
-        </div>
+        {% include nav.html %}
     </header>
 
     <section id="blog-wrap">
@@ -63,19 +49,7 @@
 
     </section>
 
-    <footer>
-        <div class="footer-wrap">
-            <h2>RYEDRINKS</h2>
-            <div class="footer-icon-wrap">   
-                <a class="insta-footer footer-icon"><img src="assets/img/instagram-white.png"></a>
-                <span class="footer-line"></span>
-                <a class="twit-footer"><img src="assets/img/twitter-white.png"></a>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy;Copyright Aidan Ross 2020</p>
-        </div>
-    </footer>
+    {% include footer.html %}
 
     <script src="assets/js/filter.js"></script>
 
