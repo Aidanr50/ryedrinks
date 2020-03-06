@@ -1309,7 +1309,11 @@ footer{
     /** Modal **/
 
     .modal-content{
-        width: 100%;
+        width: auto;
+    }
+
+    .insta-posts{
+        width: auto;
     }
 
 }
