@@ -483,6 +483,10 @@ footer{
     background-color: #ffffff;
 }
 
+.footer-link{
+    color: #CBCBCB;
+}
+
 .copyright{
     text-align: center;
 }

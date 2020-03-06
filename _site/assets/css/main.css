@@ -92,13 +92,20 @@ p{
     background-color: #A8A08A;
 }
 
-.cocktails-block:hover{
-    background-color: #979387;
+.cocktails-block, .blog-block, .hero-foot{
     transition: all 0.2s ease-in-out;
 }
 
-.cocktails-block:hover  .cocktails-block::before{
-    width: 10px;
+.cocktails-block:hover{
+    background-color: rgb(185, 176, 150);
+}
+
+.blog-block:hover{
+    background-color: #23335F;
+}
+
+.hero-foot:hover{
+    background-color: #656565;
 }
 
 .block-link{
@@ -535,11 +542,11 @@ nav > span{
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
+    transition: all 0.2s ease-in-out;
 }
 
 .brown-btn:hover{
-    background-color: #979387;
-    transition: all 0.2s ease-in-out;
+    background-color: rgb(185, 176, 150);
 }
 
 .bio-img{
@@ -800,12 +807,12 @@ footer{
     font-family: 'Merriweather';
     font-style: italic;
     color: #616161;
+    transition: all 0.2s ease-in-out;
 }
 
 .category-select:hover{
     cursor: pointer;
-    background-color: #E0D7BE;
-    transition: all 0.2s ease-in-out;
+    background-color: rgb(185, 176, 150);
 }
 
 .active{
