@@ -303,10 +303,6 @@ nav > span{
     font-weight: 700;
 }
 
-.feed-wrapper{
-
-}
-
 .feed-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -397,8 +393,8 @@ nav > span{
   }
 
   .caption-wrap{
-      width: 50%;
-      position: relative;
+    width: 50%;
+    position: relative;
   }
 
   .caption-container{
@@ -437,6 +433,8 @@ nav > span{
   .insta-user{
       font-family: 'antic-didone';
       font-size: 1.2rem;
+      text-decoration: none;
+      color: #1A284A;
   }
 
   .insta-circle{
@@ -454,6 +452,13 @@ nav > span{
       margin: 0;
       margin-left: auto;
       color: #565656;
+  }
+
+  .insta-link{
+      margin: 1rem 0 0 0;
+      text-decoration: none;
+      color: #CF980B;
+      font-size: 0.8rem;
   }
 
   .prev, .next {
@@ -549,7 +554,7 @@ nav > span{
 
 footer{
     width: 100%;
-    height: 250px;
+    height: 290px;
     background-color: #565656;
     color: #ffffff;
     font-weight: 100;
@@ -659,6 +664,14 @@ footer{
     padding: 5rem 0;
 }
 
+.cocktail-title{
+    color: #1A284A;
+}
+
+.cocktail-subtitle{
+    color: #646464;
+}
+
 .cocktail-head-wrap{
     text-align: center;
 }
@@ -733,47 +746,7 @@ footer{
     color: #f8f8f8;
     font-size: 1.2em;
 }
-/**
-.banks-hero-img{
-    grid-area: 2 / 2 / 5 / 3;
-    font-size: 0;
-    background-image: url(../img/cocktails/banks-three.jpg);
-    background-size: cover;
-    background-position: left;
-}
 
-.cocktail-temp-subtitle{
-    font-style: italic;
-}
-
-.cocktails-return{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #1A284A;
-    height: 60px;
-    text-align: center;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.cocktails-return > p{
-    margin: 18px auto;
-}
-
-.cocktail-temp-text{
-    flex-direction: column;
-    position: relative;
-    grid-area: 2 / 1 / 5 / 2;
-    align-items: flex-start;
-}
-
-.cocktail-temp-wrap{
-    padding: 2rem 0 0 4rem;
-} **/
-
-	
 /** BLOG PAGE **/
 
 #blog-wrap{
@@ -1132,6 +1105,10 @@ footer{
         color: #FFFFFF;
     }
 
+    .hero-subtitle{
+        margin: 0 0 1.5rem 0;
+    }
+
     .subtitle{
         color: #CF980B !important;
     }
@@ -1216,7 +1193,7 @@ footer{
     }
 
     .feed-container{
-        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
         grid-gap: 0;
     }
     
@@ -1274,7 +1251,15 @@ footer{
         color: #1A284A; ;
     }
 
-    .brown-btn{
+    .cocktail-title{
+        color: #f8f8f8;
+    }
+    
+    .cocktail-subtitle{
+        color: #f8f8f8;
+    }
+
+    .cocktail-btn{
         display: none;
     }
 
