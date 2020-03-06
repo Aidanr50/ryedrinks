@@ -591,6 +591,9 @@ footer{
     height: 2px;
     background-color: #ffffff;
 }
+.footer-link{
+    color: #CBCBCB;
+}
 
 .copyright{
     text-align: center;
