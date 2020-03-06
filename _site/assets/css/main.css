@@ -374,7 +374,7 @@ nav > span{
 /** Modals **/
 
 .insta-posts img{
-    max-width: 100%;
+    width: 200px;
     height: auto;
 }
 
