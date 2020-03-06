@@ -375,7 +375,7 @@ nav > span{
 /** Modals **/
 
 .insta-posts img{
-    width: 50%;
+    width: 100%;
 }
 
 .modal {
@@ -401,14 +401,16 @@ nav > span{
     display: flex;
   }
 
+  .caption-wrap{
+      width: 50%;
+      position: relative;
+  }
+
   .caption-container{
-    position: absolute;
-    top: 20%;
-    right: 25%;
-    width: 40%;
+    width: 80%;
     display: flex;
+    margin: 2rem 10% 0;
     flex-direction: column;
-    transform: translate(50%, -50%);
   }
 
   .close {
@@ -429,8 +431,7 @@ nav > span{
 
   .insta-posts{
     display: none;
-    font-size: 0;
-    width: 100%;
+    width: 50%;
   }
 
   .insta-info{
@@ -444,7 +445,7 @@ nav > span{
   }
 
   .insta-circle{
-      width: 32px;
+      width: 32px !important;
       height: 32px;
       border-radius: 50%;
       margin: 0 0.75rem 0 0;
@@ -476,6 +477,7 @@ nav > span{
   user-select: none;
   -webkit-user-select: none;
   color: #565656;
+  z-index: 30;
 }
 .next {
     right: 5%;
@@ -974,6 +976,12 @@ footer{
         grid-template-columns: 1fr 1fr;
     }
 
+    /** Modal **/
+
+    .modal-content{
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 870px){
@@ -1074,6 +1082,32 @@ footer{
     .test-img{
         width: 100%;
         height: auto;
+    }
+
+    /** Modal **/
+
+    .modal-content{
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .insta-posts{
+        width: 100%;
+    }
+
+    .caption-wrap{
+        width: 100%;
+    }
+
+    .insta-caption{
+        display: none;
+    }
+    .caption-container{
+        margin: 1rem 10%;
+    }
+
+    .prev, .next{
+        display: none;
     }
 }
 
@@ -1274,6 +1308,12 @@ footer{
     .active{
         background-color: #A8A08A;
         color: #FFFFFF;
+    }
+
+    /** Modal **/
+
+    .modal-content{
+        width: 100%;
     }
 
 }

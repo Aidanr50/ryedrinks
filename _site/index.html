@@ -102,7 +102,7 @@
                     </div>
                 </div>
 
-                <div class="gallery-item" tabindex="0">
+                <div class="gallery-item" tabindex="0" onclick="openModal();currentSlide(2)">
                     <img src="assets/img/instagram/barrels.jpg" class="gallery-image" alt="">
                     <div class="gallery-item-info">
                         <ul>
@@ -112,7 +112,7 @@
                     </div>
                 </div>
 
-                <div class="gallery-item" tabindex="0">
+                <div class="gallery-item" tabindex="0" onclick="openModal();currentSlide(3)">
                     <img src="assets/img/instagram/bottles.jpg" class="gallery-image" alt="">
                     <div class="gallery-item-info">
                         <ul>
@@ -122,7 +122,7 @@
                     </div>
                 </div>
 
-                <div class="gallery-item" tabindex="0">
+                <div class="gallery-item" tabindex="0" onclick="openModal();currentSlide(4)">
                     <img src="assets/img/instagram/mince-pie.jpg" class="gallery-image" alt="">
                     <div class="gallery-item-info">
                         <ul>
@@ -132,7 +132,7 @@
                     </div>
                 </div>
 
-                <div class="gallery-item" tabindex="0">
+                <div class="gallery-item" tabindex="0" onclick="openModal();currentSlide(5)">
                     <img src="assets/img/instagram/bar-scene.jpg" class="gallery-image" alt="">
                     <div class="gallery-item-info">
                         <ul>
@@ -142,7 +142,7 @@
                     </div>
                 </div>
 
-                <div class="gallery-item" tabindex="0">
+                <div class="gallery-item" tabindex="0" onclick="openModal();currentSlide(6)">
                     <img src="assets/img/instagram/ryan-still.jpg" class="gallery-image" alt="">
                     <div class="gallery-item-info">
                         <ul>
@@ -152,7 +152,7 @@
                     </div>
                 </div>
 
-                <div class="gallery-item" tabindex="0">
+                <div class="gallery-item" tabindex="0" onclick="openModal();currentSlide(7)">
                     <img src="assets/img/instagram/vodka-cranberry.jpg" class="gallery-image" alt="">
                     <div class="gallery-item-info">
                         <ul>
@@ -162,7 +162,7 @@
                     </div>
                 </div>
 
-                <div class="gallery-item" tabindex="0">
+                <div class="gallery-item" tabindex="0" onclick="openModal();currentSlide(8)">
                     <img src="assets/img/instagram/milk-punch.jpg" class="gallery-image" alt="">
                     <div class="gallery-item-info">
                         <ul>
@@ -178,29 +178,62 @@
             <span class="close cursor" onclick="closeModal()">&times;</span>
             <div class="modal-content">
                 <div class="insta-posts">
-                    <img class="demo" src="assets/img/instagram/sea-bass.jpg">
+                    <img class="demo" src="assets/img/instagram/sea-bass.jpg" alt="Stone Bass so tasty I had it twice last week!">
                 </div>
 
                 <div class="insta-posts">
-                    <img class="demo" src="assets/img/instagram/sea-bass.jpg">
+                    <img class="demo" src="assets/img/instagram/barrels.jpg" alt="Feeling spritzy...">
                 </div>
 
                 <div class="insta-posts">
-                    <img class="demo" src="assets/img/instagram/sea-bass.jpg">
+                    <img class="demo" src="assets/img/instagram/bottles.jpg" alt="Great @glenfiddichwhisky tasting with @singlemaltmark and the entire team. We got our hands on some tasty juice. #glenfiddich #whisky #tasty #dram Great @glenfiddichwhisky tasting with @singlemaltmark and the entire team. We got our hands on some tasty juice. #glenfiddich #whisky #tasty #dram">
+                </div>
+
+                <div class="insta-posts">
+                    <img class="demo" src="assets/img/instagram/mince-pie.jpg" alt="“Home Alone 2” My most recent creation for the @orchidaberdeen Christmas menu.
+                    .
+                    @glasshousewhisky | Mince Pie infused @martini Rosso | Lemon |Egg White | Ginger Ale |
+                    .
+                    #tastyfuckinghiballs
+                    📸: @grantandersondotme">
+                </div>
+
+                <div class="insta-posts">
+                    <img class="demo" src="assets/img/instagram/bar-scene.jpg" alt="Michter’s Small Batch Bourbon & Passé-Crassane Pear. First trip to @artesianbarlondon was pretty tasty.">
+                </div>
+
+                <div class="insta-posts">
+                    <img class="demo" src="assets/img/instagram/ryan-still.jpg" alt="Just me having a ‘tun’ of fun in Finland... @kyrodistillery #kyröexperience">
+                </div>
+
+                <div class="insta-posts">
+                    <img class="demo" src="assets/img/instagram/vodka-cranberry.jpg" alt="VODKA - CRANBERRY
+                    @threesheetslondon
+                    Tasty little number from my last London trip.">
+                </div>
+
+                <div class="insta-posts">
+                    <img class="demo" src="assets/img/instagram/milk-punch.jpg" alt="Team Scotland for the Reyka Expedition Competition.
+                    Started off as strangers, left as Legends.
+                    Bring on Iceland.
+                    @reyka_vodka
+                    @fabsting
+                    #reykaexpedition #competition
+                    #teamscotland #offtoiceland #nature #adventurivity #reyka">
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                <div class="caption-container">
-                    <div class="insta-info">
-                        <img class="insta-circle" src="assets/img/insta-circle.jpg">
-                        <a class="insta-user">ryedrinks</a>
-                        <p class="insta-date">3w</p>
+                <div class="caption-wrap">
+                    <div class="caption-container">
+                        <div class="insta-info">
+                            <img class="insta-circle" src="assets/img/insta-circle.jpg">
+                            <a class="insta-user">ryedrinks</a>
+                            <a class="insta-date" href="https://www.instagram.com/ryedrinks/"><img src="assets/img/instagram.png"></a>
+                        </div>
+                        <hr>
+                        <p class="insta-caption" id="caption"></p>
                     </div>
-                    <hr>
-                    <p class="insta-caption">Stone Bass so tasty I had it twice last week!</p>
-                    <a>Follow me ></a>
                 </div>
             </div>
         </div>
@@ -216,7 +249,8 @@
                         To them I'm incredibly thankful. Because if it wasn't for those people. I wouldn't be where I am now.
                     </p>
                     <p>
-                        Now I'm at a stage in my life where 
+                        Now I'm at a stage in my life where I'm looking to advance my career. Be that in my home town or in any town or city across the UK.
+                        If you think I'd be right for your business, drop me a message on Instagram.
                     </p>
                     <a class="brown-btn" href="blog.html">Visit Blog</a>
                 </div>
