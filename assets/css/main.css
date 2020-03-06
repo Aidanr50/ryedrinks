@@ -265,7 +265,6 @@ nav > span{
     grid-area: 2 / 2 / 2 / 5;
     display: flex;
     align-items: center;
-    padding: 3rem;
     background-color: #1A284A;
     color: #ffffff;
     font-weight: 100;
@@ -273,6 +272,7 @@ nav > span{
 
 .about-text p{
     margin: 0;
+    padding: 3rem;
 }
 
 /** Instagram Section **/
@@ -307,44 +307,6 @@ nav > span{
     font-weight: 700;
 }
 
-/** Scrolling Test
-.feed-wrapper{
-    display: grid;
-    grid-template-columns: 20px 1fr 20px;
-    padding: 20px 0;
-    grid-gap: 20px 0;
-    align-content: start;
-}
-
-.feed-wrapper > *{
-    grid-column: 2 / -2;
-}
-
-.feed-wrapper > .full{
-    grid-column: 1 / -1;
-}
-
-.feed-container > .feed-item {
-  scroll-snap-align: center;
-  padding: calc(var(--gutter) / 2 * 1.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-}
-
-.feed-container{
-    display: grid;
-    grid-gap: calc(var(--gutter) / 2);
-    grid-template-columns: 10px repeat(6, calc(50% - 20px * 2)) 10px;
-    grid-template-rows: minmax(150px, 1fr);
-    overflow-x: scroll;
-    scroll-snap-type: x proximity;
-    padding-bottom: calc(.75 * 20px);
-    margin-bottom: calc(-0.5 * 20px);
-  } **/
-
 .feed-wrapper{
 
 }
@@ -361,14 +323,12 @@ nav > span{
     color: #fff;
     cursor: pointer;
     font-size: 0;
-    transition: all 1s ease-in-out;
 }
 
 .gallery-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-color: rgba(0, 0, 0, 0.0);
 }
 
 .gallery-item-type {
@@ -412,6 +372,120 @@ nav > span{
     overflow: hidden;
 }
 
+/** Modals **/
+
+.insta-posts img{
+    width: 50%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    padding-top: 65px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+  }
+
+  .caption-container{
+    position: absolute;
+    top: 20%;
+    right: 25%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    transform: translate(50%, -50%);
+  }
+
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .insta-posts{
+    display: none;
+    font-size: 0;
+    width: 100%;
+  }
+
+  .insta-info{
+      display: flex;
+      align-items: center;
+      margin: 0 0 1rem 0;
+  }
+  .insta-user{
+      font-family: 'antic-didone';
+      font-size: 1.2rem;
+  }
+
+  .insta-circle{
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin: 0 0.75rem 0 0;
+  }
+
+  .insta-caption{
+      margin: 2rem 0 ;
+  }
+
+  .insta-date{
+      margin: 0;
+      margin-left: auto;
+      color: #565656;
+  }
+
+  .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 95%;
+  right: 10%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  color: #565656;
+}
+.next {
+    right: 5%;
+    border-radius: 3px 0 0 3px;
+  }
+
+.active, .demo:hover {
+  opacity: 1;
+}
+
 /** Bio Section **/
 
 #bio{
@@ -448,15 +522,17 @@ nav > span{
 }
 
 .brown-btn{
-    width: 150px;
+    width: 200px;
     background-color: #A8A08A;
-    padding: 1rem;
+    margin: 2rem 0 0 0;
+    padding: 1rem 2rem;
     color: #ffffff;
     font-family: 'Merriweather';
     font-weight: 400;
     font-size: 1em;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .brown-btn:hover{
@@ -488,6 +564,11 @@ footer{
     margin: 0 auto;
     text-align: center;
     padding: 3rem 0;
+}
+
+.footer-wrap h2{
+    color: #f8f8f8;
+    font-style: italic;
 }
 
 .footer-icon{
@@ -644,9 +725,6 @@ footer{
     overflow: hidden;
 }
 
-.cocktail-text h1{
-
-}
 .cocktails-return{
     grid-area: 2 / 1 / 3 / 2;
     background-color: #1A284A;
@@ -698,6 +776,124 @@ footer{
     padding: 2rem 0 0 4rem;
 } **/
 
+	
+/** BLOG PAGE **/
+
+#blog-wrap{
+    width: 80%;
+    max-width: 900px;
+    margin: 1rem auto;
+}
+
+.blog-posts{
+    margin: 1rem 0;
+}
+
+.blog-posts li{
+    margin: 3rem 0;
+}
+
+.blog-posts img{
+    width: 225px;
+}
+
+.blog-info{
+    padding: 0 7rem 0 0;
+}
+
+.blog-info > p{
+    margin: 0 0 1rem 0;
+    line-height: 1.8;
+}
+
+.blog-info > a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #121641;
+}
+
+.blog-info > h1{
+    font-size: 2rem;
+    padding: 0 0 1rem 0;
+    text-decoration: none;
+    color: #121641;
+}
+
+.category-select{
+    border: 2px solid #A8A08A;
+    background: none;
+    padding: 1rem 2rem;
+    margin: 0 0 1rem 0;
+    font-family: 'Merriweather';
+    font-style: italic;
+    color: #616161;
+}
+
+.category-select:hover{
+    cursor: pointer;
+    background-color: #E0D7BE;
+    transition: all 0.2s ease-in-out;
+}
+
+.active{
+    background-color: #A8A08A;
+    color: #FFFFFF;
+}
+
+.category-tag{
+    font-family: 'Antic Didone';
+}
+
+.category-type{
+    font-family: 'Merriweather';
+    font-style: italic;
+    color: #CF980B;
+}
+
+.post-description{
+    line-height: 2;
+}
+
+.blog-date{
+    color: #9B9B9B;
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
+.filter-item{
+    display: none;
+}
+
+.show{
+    display: flex;
+}
+
+/** Post Template **/
+
+.post-content{
+    font-size: 1rem;
+    color: #171717;
+    margin: 2rem 0;
+}
+
+.post-content > h1, h2, h3{
+    color: #A8A08A;
+    margin: 2rem 0;
+    font-style: italic;
+}
+
+.post-content p > img{
+    width: 100%;
+}
+
+.post-img-container{
+    margin: 2rem 0;
+}
+
+.post-img{
+    width: 100%;
+}
+
 /** TICKER ANIMATION **/
 
 @keyframes ticker-r{
@@ -738,6 +934,10 @@ footer{
 
     .nav-wrap{
         grid-template-columns: 1.2fr 1.2fr 2fr;
+    }
+
+    .cocktail-hero-text{
+        grid-area: 2 / 1 / 3 / 2;
     }
 
     /** About Section **/
@@ -784,13 +984,10 @@ footer{
 
     .about-text{
         grid-area: 2 / 2 / 2 / 6;
-        display: flex;
-        align-items: center;
-        line-height: 2;
-        padding: 3rem;
-        background-color: #1A284A;
-        color: #ffffff;
-        font-weight: 100;
+    }
+
+    .about-text p{
+        padding: 2.5rem;
     }
 
     /** Bio Section **/
@@ -840,6 +1037,16 @@ footer{
     
     .bio-photo{
         width: 100%;
+    }
+
+     /** Blog Section **/
+
+     .blog-posts img{
+        width: 260px;
+    }
+    
+    .blog-info{
+        padding: 0 3rem 0 0;
     }
 
     .cocktail-template-hero{
@@ -897,7 +1104,7 @@ footer{
     }
 
     .subtitle{
-        color: #E9E9E9 !important;
+        color: #CF980B !important;
     }
 
     .logo-white{
@@ -1036,6 +1243,37 @@ footer{
 
     .cocktail-text p{
         color: #1A284A; ;
+    }
+
+    .brown-btn{
+        display: none;
+    }
+
+    /** Blog Section **/
+
+    #blog-wrap{
+        width: 90%;
+    }
+
+    .blog-posts img{
+        display: none;
+    }
+
+    .blog-info{
+        padding: 0;
+    }
+
+    .category-select{
+        border: 2px solid #A8A08A;
+        background: none;
+        padding: 1rem 2rem;
+        margin: 2% 2.1%;
+        width: 45%;
+    }
+    
+    .active{
+        background-color: #A8A08A;
+        color: #FFFFFF;
     }
 
 }

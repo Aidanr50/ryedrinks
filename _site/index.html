@@ -91,7 +91,7 @@
 
         <div class="feed-wrapper">
             <div class="feed-container">
-                <div class="gallery-item" tabindex="0">
+                <div class="gallery-item" tabindex="0" onclick="openModal();currentSlide(1)">
                     <img src="assets/img/instagram/sea-bass.jpg" class="gallery-image" alt="">
                     <div class="gallery-item-info">
                         <p class="gallery-item-caption">Stone Bass so tasty I had it twice last week!</p>
@@ -173,6 +173,37 @@
                 </div>
             </div>
         </div>
+
+        <div id="modal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="insta-posts">
+                    <img class="demo" src="assets/img/instagram/sea-bass.jpg">
+                </div>
+
+                <div class="insta-posts">
+                    <img class="demo" src="assets/img/instagram/sea-bass.jpg">
+                </div>
+
+                <div class="insta-posts">
+                    <img class="demo" src="assets/img/instagram/sea-bass.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <div class="insta-info">
+                        <img class="insta-circle" src="assets/img/insta-circle.jpg">
+                        <a class="insta-user">ryedrinks</a>
+                        <p class="insta-date">3w</p>
+                    </div>
+                    <hr>
+                    <p class="insta-caption">Stone Bass so tasty I had it twice last week!</p>
+                    <a>Follow me ></a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="bio" class="bio">
@@ -187,7 +218,7 @@
                     <p>
                         Now I'm at a stage in my life where 
                     </p>
-                    <button class="brown-btn" href="blog.html">Visit Blog</button>
+                    <a class="brown-btn" href="blog.html">Visit Blog</a>
                 </div>
             </div>
             <div class="bio-img">
@@ -213,5 +244,6 @@
     <script src="https://kit.fontawesome.com/f359594d0c.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/ticker.js"></script>
+    <script src="assets/js/modal.js"></script>
 </body>
 </html>
