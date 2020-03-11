@@ -531,7 +531,7 @@ nav > span{
 
 .bio-text p{
     margin-bottom: 2rem;
-    max-width: 400px;
+    max-width: 575px;
     font-weight: 100;
 }
 
@@ -733,7 +733,7 @@ footer{
 
 .cocktail-text p{
     font-family: 'Merriweather';
-    max-width: 500px;
+    max-width: 700px;
     font-size: 1em;
     margin-bottom: 2rem;
 }
@@ -893,6 +893,13 @@ footer{
     }
 }
   
+@media screen and (max-width: 1660px){
+
+    .feed-container{
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+
+}
 
 @media screen and (max-width: 970px){
 
