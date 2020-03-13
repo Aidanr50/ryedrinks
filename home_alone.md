@@ -1,5 +1,5 @@
 ---
-title: Home Alone
+title: Home Alone 2
 layout: cocktail_layout
 tagline: A Warm Christmas Tipple
 imagePost: /assets/img/cocktails/home-alone-cocktail.jpg
